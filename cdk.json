@@ -1,0 +1,3 @@
+{
+  "app": "npx ts-node bin/pdf_lambda.ts"
+}
