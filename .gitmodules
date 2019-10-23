@@ -1,0 +1,12 @@
+[submodule "fumbler"]
+	path = fumbler
+	url = https://github.com/moeomer/fumbler
+[submodule "imprenta"]
+	path = imprenta
+	url = https://github.com/alfredo/imprenta
+[submodule "api2pdf.python"]
+	path = api2pdf.python
+	url = https://github.com/Api2Pdf/api2pdf.python
+[submodule "zeplin-html-to-pdf"]
+	path = zeplin-html-to-pdf
+	url = https://github.com/zeplin/zeplin-html-to-pdf

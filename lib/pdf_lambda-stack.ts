@@ -8,7 +8,7 @@ export class PdfLambdaStack extends cdk.Stack {
 
     const htmlToPdfHandler = new lambda.Function(this, "htmlToPdfHandler", {
       runtime: lambda.Runtime.NODEJS_8_10,
-      code: lambda.Code.asset("aws-lambda-wkhtmltopdf"),
+      code: lambda.Code.asset("zeplin-html-to-pdf"),
       handler: "index.handler",
       memorySize: 512,
       timeout: cdk.Duration.seconds(10)
