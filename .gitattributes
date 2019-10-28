@@ -1,0 +1,4 @@
+# All JS files will always have LF line endings on checkout
+*.js text eol=lf
+*.json text eol=lf
+*.css text eol=lf
