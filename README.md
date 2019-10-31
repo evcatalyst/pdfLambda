@@ -15,3 +15,26 @@ Once you modify the code, run the following from the root of the repository:
 
 Note that if you make a change to the underlying lambda code, and are in a testing/development mode, you should do a destroy/deploy since CDK does not track changes in underlying "assets" which the lambda code is, and the difference will not show up on a diff and will not generate a new zip file on deploy unless you have destroyed the existing CDK deployment. You can do that via `cdk destroy`
 
+
+
+```mermaid
+stateDiagram
+    origin --> p0 : Create
+    p0 --> pLocked : Delete
+    pLocked --> pX : _
+    p0 --> pLocked : lock
+    pL --> p0 : unlock
+    p0 --> p0 : save/update
+    pA : Some State
+    pX --> [*]
+```
+
+
+```mermaid
+sequenceDiagram
+    participant A as Alice
+    participant J as John
+    A->>J: Hello John, how are you?
+    J->>A: Great!
+
+```
